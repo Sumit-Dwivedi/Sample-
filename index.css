@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: white;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    color: rgba(255, 255, 255, 0.523);
+    font-family: "Inter", sans-serif;
+}
+body{
+    margin: 0px 200px;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav div{
+    display: none;
+}
+nav p{
+    color: white;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.523);
+    gap:40px;
+}
+button{
+    padding: 10px 20px;
+    background-color: yellow;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    width: 600px;
+    margin: 30px 0px;
+    padding: 20px;
+}
+header p{
+    margin-top: 10px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.523);
+}
+.companies{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.companies img{
+    height: 25px;
+}
+#projects{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#projects div{
+    width: 500px;
+}
+#projects div img{
+    margin-bottom: 15px;
+}
+#projects div h1{
+    font-weight: 700px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#projects div p{
+    color: rgba(255, 255, 255, 0.523);
+    line-height: 20px;
+}
+.info{
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 20px;
+    margin: 0px -200px;
+}
+.info div{
+    width: 500px;
+    padding-left: 30px;
+}
+.info div h1{
+    font-family: 'prata';
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.info div p{
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.Interested{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    margin:100px 0px;
+}
+.Interested h1{
+    margin-top: -10px;
+}
+.Interested button{
+    margin-top: 10px;
+    width: fit-content;
+}
+footer{
+    margin: 0px -200px;
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-family: 'prata';
+    color: white;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0px 200px;
+}
+footer img{
+    
+    padding-left: 10px;
+}
+
+@media  screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        margin: 0px;
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul,nav button{
+        display: none;
+    }
+    nav div{
+        display: inline;
+    }
+    header{
+        width:100%;
+    }
+    .companies{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        width: 100%;
+    }
+    #projects{
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+    #projects img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .info div{
+        padding: 2px;
+    }
+    .Interested{
+        padding: 5px 30px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer{
+        margin: 0px;
+        margin-bottom: 2px;
+        padding: 10px;
+        width: 100%;
+    }
+    footer img{
+        padding: 0px;
+    }
+    footer p{
+        margin: 0px;
+    }
+    footer div{
+        display: flex;
+        justify-content: space-between;
+        margin:0px;
+        gap: 10px;
+    }
+}
